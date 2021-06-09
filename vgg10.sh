@@ -1,5 +1,5 @@
 python3 train.py  --optim NewtonCG\
-		             --C 0.1 -lambda 1\
+		             --C 0.1 --lambda 1\
 		             --net VGG11 --bsize 3000 \
 		             --GNsize 250 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
