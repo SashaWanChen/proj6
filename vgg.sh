@@ -86,9 +86,9 @@ python3 predict.py --test_set ./data/cifar10.t.mat \
 
 
 python3 train.py --optim NewtonCG\
-		             --lr 0.01 --C 0.1 \
+		             --C 0.1 -lambda 0\
 		             --net VGG11 --bsize 3000 \
-		             --GNsize 4096 --CGmax  80 \
+		             --GNsize 1000 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
 		             --model ./saved_model/CIFAR10_NewtonCG_model.ckpt \
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger1.log\
@@ -98,9 +98,9 @@ python3 predict.py	 --test_set ./data/cifar10.t.mat \
 
 
 python3 train.py  --optim NewtonCG\
-		             --lr 0.001 --C 0.1 \
+		             --C 0.1 -lambda 1\
 		             --net VGG11 --bsize 3000 \
-		             --GNsize 4096 --CGmax  80 \
+		             --GNsize 250 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
 		             --model ./saved_model/CIFAR10_NewtonCG_model.ckpt \
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger2.log\
@@ -111,9 +111,9 @@ python3 predict.py --test_set ./data/cifar10.t.mat \
 
 
 python3 train.py --optim NewtonCG\
-		             --lr 0.0001 --C 0.1 \
+		             --C 0.1 -lambda 0\
 		             --net VGG11 --bsize 3000 \
-		             --GNsize 4096 --CGmax  80 \
+		             --GNsize 1000 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
 		             --model ./saved_model/CIFAR10_NewtonCG_model.ckpt \
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger3.log\
@@ -124,9 +124,9 @@ python3 predict.py --test_set ./data/cifar10.t.mat \
 
 
 python3 train.py --optim NewtonCG\
-		             --lr 0.00001 --C 0.1 \
+		             -C 0.1 -lambda 1\
 		             --net VGG11 --bsize 3000 \
-		             --GNsize 4096 --CGmax  80 \
+		             --GNsize 1000 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
 		             --model ./saved_model/CIFAR10_NewtonCG_model.ckpt \
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger4.log\
