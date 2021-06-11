@@ -5,5 +5,5 @@ python3 train.py --optim SGD\
 		             --model ./saved_model/CIFAR10_SGD_model4.ckpt \
 		             --log ./running_log/CIFAR10_SGD_VGG_logger4.log\
 		             --seed 85
-python3 predict.py	 --test_set ./data/CIFAR10.t.mat \
+python3 predict.py	 --test_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_SGD_model4.ckpt
