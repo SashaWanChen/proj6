@@ -7,4 +7,4 @@ python3 train.py --optim NewtonCG\
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger4.log\
 		             --seed 85
 python3 predict.py --test_set ./data/cifar10.t.mat \
-             --model ./saved_model/CIFAR10_NewtonCG_model2.ckpt
+             --model ./saved_model/CIFAR10_NewtonCG_model12.ckpt
