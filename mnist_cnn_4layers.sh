@@ -17,6 +17,7 @@ python3 train.py --optim SGD\
 		             --momentum 0.9 \
 		             --train_set ./data/mnist-5000.mat \
 		             --model ./saved_model/MNIST_SGD_model2.ckpt\
+			     --log ./running_log/MNIST_SGD_logger.log\
 		             --dim 28 28 1\
 		             --seed 85
 python3 predict.py --test_set ./data/mnist.t.mat \
