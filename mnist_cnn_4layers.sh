@@ -108,7 +108,7 @@ python3 predict.py --test_set ./data/mnist.t.mat \
 
 		
 python3 train.py --optim NewtonCG\
-		             --C 0.1 --lambda 1\
+		             --C 0.1 --lambda 0\
 		             --net CNN_4layers --bsize 3000 \
 		             --GNsize 250 --CGmax  80 \
 		             --train_set ./data/mnist-5000.mat \
@@ -122,7 +122,7 @@ python3 predict.py --test_set ./data/mnist.t.mat \
 		             --dim 28 28 1
 
 python3 train.py --optim NewtonCG\
-		             --C 0.1 --lambda 0\
+		             --C 0.1 --lambda 1\
 		             --net CNN_4layers --bsize 3000 \
 		             --GNsize 250 --CGmax  80 \
 		             --train_set ./data/mnist-5000.mat \
@@ -136,7 +136,7 @@ python3 predict.py --test_set ./data/mnist.t.mat \
 		             --dim 28 28 1
 
 python3 train.py --optim NewtonCG\
-		             --C 0.1 --lambda 1\
+		             --C 0.1 --lambda 0\
 		             --net CNN_4layers --bsize 3000 \
 		             --GNsize 1000 --CGmax  80 \
 		             --train_set ./data/mnist-5000.mat \
@@ -150,7 +150,7 @@ python3 predict.py --test_set ./data/mnist.t.mat \
 		             --dim 28 28 1
 
 python3 train.py --optim NewtonCG\
-		             --C 0.1 --lambda 0\
+		             --C 0.1 --lambda 1\
 		             --net CNN_4layers --bsize 3000 \
 		             --GNsize 1000 --CGmax  80\
 		             --train_set ./data/mnist-5000.mat \
