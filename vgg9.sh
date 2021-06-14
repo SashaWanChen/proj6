@@ -3,6 +3,7 @@ python3 train.py --optim NewtonCG\
 		             --net VGG11 --bsize 3000 \
 		             --GNsize 1000 --CGmax  80 \
 		             --train_set ./data/cifar10-5000.mat \
+			     --val_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_NewtonCG_model9.ckpt \
 		             --log ./running_log/CIFAR10_NewtonCG_VGG_logger1.log\
 		             --seed 85
