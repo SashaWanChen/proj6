@@ -7,7 +7,7 @@ python3 train.py --optim SGD\
 		             --model ./saved_model/CIFAR10_SGD_model_1.ckpt \
 		             --log ./running_log/CIFAR10_SGD_logger1.log\
 		             --seed 85
-python3 predict.py --test_set ./data/CIFAR10.t.mat \
+python3 predict.py --test_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_SGD_model_1.ckpt
 
 python3 train.py --optim SGD\
@@ -19,7 +19,7 @@ python3 train.py --optim SGD\
 		             --model ./saved_model/CIFAR10_SGD_model_2.ckpt \
 		             --log ./running_log/CIFAR10_SGD_logger2.log\
 		             --seed 85
-python3 predict.py --test_set ./data/CIFAR10.t.mat \
+python3 predict.py --test_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_SGD_model_2.ckpt
 
 python3 train.py --optim SGD\
@@ -31,7 +31,7 @@ python3 train.py --optim SGD\
 		             --model ./saved_model/CIFAR10_SGD_model_3.ckpt \
 		             --log ./running_log/CIFAR10_SGD_logger3.log\
 		             --seed 85
-python3 predict.py --test_set ./data/CIFAR10.t.mat \
+python3 predict.py --test_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_SGD_model_3.ckpt
 
 python3 train.py --optim SGD\
@@ -43,7 +43,7 @@ python3 train.py --optim SGD\
 		             --model ./saved_model/CIFAR10_SGD_model_4.ckpt \
 		             --log ./running_log/CIFAR10_SGD_logger4.log\
 		             --seed 85
-python3 predict.py --test_set ./data/CIFAR10.t.mat \
+python3 predict.py --test_set ./data/cifar10.t.mat \
 		             --model ./saved_model/CIFAR10_SGD_model_4.ckpt
 
 python3 train.py --optim Adam\
